@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <!--Navigation Bar-->
     <ul class="Pages">
         <li class="navbar-link"><a href="./index.html">Home</a></li>
@@ -17,6 +19,37 @@
         <li class="navbar-link"><a href="./testimonials.html">Testimonials</a></li>
         <li class="navbar-link"><a href="./contact.html">Contact</a> </a></li>
       </ul>
+
+    <!--Timeline Container-->
+      <div class="timeline-container">
+        <div class="line"></div>
+        <div class="card card1" data-aos="fade-left">
+          <h2 class="edu-heading">Heathfield High</h2>
+          <h3>Matriculated 2013</h3>
+          <h4>Duration: 5 years</h4>
+        </div>
+        <div class="card card2" data-aos="fade-right">
+          <h2 class="edu-heading">RlabsU</h2>
+          <h3>Introduction to Computers</h3>
+          <h4>Duration:3 Aug 2019 - 24 Aug 2019 (3 days) </h4>
+        </div>
+        <div class="card card3" data-aos="fade-left">
+          <h2 class="edu-heading">RlabsU</h2>
+          <h3>Basic Word Processing</h3>
+          <h4>28 Sept 2019 - 5 Oct 2019(2 days)</h4>
+        </div>
+        <div class="card card4" data-aos="fade-right">
+          <h2 class="edu-heading">RlabsU</h2>
+          <h3>Basic Spreadsheets</h3>
+          <h4>12 Oct 2019 - 19 Oct 2019 (2 days)</h4>
+        </div>
+      </div>
+      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+        
   
 </body>
 </html>

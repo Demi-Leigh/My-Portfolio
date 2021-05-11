@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demi-Leigh Jefferies</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!--Navigation Bar-->
-    <ul class="Pages">
+    <ul class="Pages" data-aos="zoom-in">
       <li class="navbar-link"><a href="./index.html">Home</a></li>
       <li class="navbar-link"><a href="./about.html">About Me</a></li>
       <li class="navbar-link"><a href="./education.html">Education</a></li>
@@ -18,20 +20,23 @@
       <li class="navbar-link"><a href="./contact.html">Contact</a> </a></li>
     </ul>
 
-    <!--About Me Section-->
-    <section class="about">
+    <!--Landing Section-->
+    <section class="landing" data-aos="zoom-in">
       <img 
         src="./images/Demi-Leigh_Jefferies__1_-removebg-preview.png"
         alt="Picture of Me"
         srcset=""
       />
-      <div class= "text" data-tilt >
+      <div>
         <h1>Demi-Leigh Jefferies</h1>
-        <h2>Junior Web Developer</h2>
+        <h2 class="dev-heading">Junior Web Developer</h2>
         <p> Hi there! Welcome to my portfolio.<br>I am an aspiring Web Developer<br>Have a look around my portfolio and get to know a little more about me.<br>Hopefully we'll be in contact soon. 
         </p>
       </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>

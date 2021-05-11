@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body data-aos="fade-down">
     <!--Navigation Bar-->
     <ul class="Pages">
         <li class="navbar-link"><a href="./index.html">Home</a></li>
@@ -17,5 +18,112 @@
         <li class="navbar-link"><a href="./testimonials.html">Testimonials</a></li>
         <li class="navbar-link"><a href="./contact.html">Contact</a> </a></li>
       </ul>
+
+      <h1 class="pro-heading">PROJECTS</h1>
+
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+      <!-- CONTACT FORM-->
+      <div class="project">
+        <img
+          src="./images/Screenshot from 2021-05-03 14-09-27.png"
+          alt="contact-form"
+          class="card-img"
+        />
+
+        <!-- ABOUT PROJECT-->
+        <div class="about">
+          <h2 class="heading">Contact-Form</h2>
+          <h3 class="subtitle">HTML/CSS</h3>
+          <p class="description">
+            Glassmorphic styled form using Formspree and Glassmorphism.com
+          </p>
+
+          <!-- LINKS/BUTTONS-->
+          <div class="buttons">
+            <a
+              href="https://hopeful-nobel-d4b9b7.netlify.app/"
+              target="_blank"
+              class="button"
+              >Live</a
+            >
+            <a
+              href="https://github.com/Demi-Leigh/Contact-Form"
+              target="_blank"
+              class="button"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--TESTIMONIAL-->
+      <div class="project">
+        <img
+          src="./images/Screenshot from 2021-05-03 14-16-14.png"
+          alt="Testimonial"
+          class="card-img"
+        />
+
+        <!--ABOUT PROJECT-->
+        <div class="about">
+          <h2 class="heading">Testimonial-Slider</h2>
+          <h3 class="subtitle">HTML/CSS/JS</h3>
+          <p class="description">
+            Designed the slider using Glassmorphism.com and Owl Carousel.
+          </p>
+          <div class="buttons">
+            <a
+              href="https://quirky-curran-1e83c9.netlify.app/"
+              target="_blank"
+              class="button"
+              >Live</a
+            >
+            <a
+              href="https://github.com/Demi-Leigh/Testimonial-Slider"
+              target="_blank"
+              class="button"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--TIMELINE-->
+      <div class="project">
+        <img
+          src="./images/Screenshot from 2021-05-03 14-25-04.png"
+          alt="Timeline"
+          class="card-img"
+        />
+
+        <!--ABOUT PROJECT-->
+        <div class="about">
+          <h2 class="heading">My-Timeline</h2>
+          <h3 class="subtitle">HTML/CSS</h3>
+          <p class="description">A timeline designed using AOS animations.</p>
+          <div class="buttons">
+            <a
+              href="https://vigorous-almeida-273b20.netlify.app/"
+              target="_blank"
+              class="button"
+              >Live</a
+            >
+            <a
+              href="https://github.com/Demi-Leigh/My-Timeline"
+              target="_blank"
+              class="button"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
