@@ -5,17 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonials</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./styles.css" />
+    
   </head>
   <body>
-  <!--Navigation Bar-->
-  <ul class="Pages" data-aos="zoom-in">
-    <li class="navbar-link"><a href="./index.html">Home</a></li>
-    <li class="navbar-link"><a href="./about.html">About Me</a></li>
-    <li class="navbar-link"><a href="./education.html">Education</a></li>
-    <li class="navbar-link"><a href="./My Projects.html">Projects</a></li>
-    <li class="navbar-link"><a href="./testimonials.html">Testimonials</a></li>
-    <li class="navbar-link"><a href="./contact.html">Contact</a> </a></li>
-  </ul>
+    <!--Navigation Bar-->
+    <ul class="Pages">
+      <li class="navbar-link"><a href="./index.html">Home</a></li>
+      <li class="navbar-link"><a href="./about.html">About Me</a></li>
+      <li class="navbar-link"><a href="./education.html">Education</a></li>
+      <li class="navbar-link"><a href="./My Projects.html">Projects</a></li>
+      <li class="navbar-link">
+        <a href="./testimonials.html">Testimonials</a>
+      </li>
+      <li class="navbar-link"><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <!--Slider-->
+
+    <div class="owl-carousel">
+      <div class="test-content">
+        <img src="./images/godwin-dzvapatsra.jpg" class="test-img" alt="Image">
+        <h2>Godwin Dzvapatsva</h2>
+        <h3>Head of Curriculum and Learning</h3>
+        <q>Demi-Leigh enjoys working without supervision and always continues to carry out duties effectively.<br>But also knows when a mentor’s advice or authority is required. I recommend her.</q>
+      </div>
+
+      <div class="test-content">
+         <img src="./images/candice-amon.png" class="test-img"alt="Image">
+        <h2>Candice Amon</h2>
+        <h3>Life Choices Academy Facilitator</h3>
+        <q>Very mature on her outlook on life.<br>A quiet and resilient individual who always tries her best in all she does.<br>Very consistent in communication and methodical approach to tasks.<br>Soft hearted,however knows her boundaries and does not allow<br>stumbling blocks to get her down rather than using it as stepping stones.</q>
+      </div>
+
+      <div class="test-content">
+        <img src="./images/candice-amon.png"  class="test-img" alt="Image">
+        <h2>Naeemah Davis</h2>
+        <h3>Peer</h3>
+        <q>Demi is a talented , sweet and hard-working indiviual.<br>With both intellect and a great personality on her side,<br>I would recommend her for any form of work<br>as her presence is beneficial to all.</q>
+      </div>
+
+      <div class="test-content">
+        <img src="./images/2021-team-jason-wandrag.jpg" class="test-img" alt="Image">
+        <h2>Jason Wandrag</h2>
+        <h3>Lecturer</h3>
+        <q>Demi-Leigh always has a smile on her face.<br>Her gentle personality and calmness in stressful situations will make for a great asset in any company.</q>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 150,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>
