@@ -209,13 +209,42 @@ p {
   font-weight: 300;
 }
 
-.icons {
+#logos {
   display: flex;
   justify-content: center;
-  font-size: 150px;
+  font-size: 20vh;
 }
+
 .fab {
-  margin: 3%;
+  margin: 1%;
+}
+
+.work-exp {
+  background-color: #ffffff;
+
+  border-color: #007ced;
+  border-width: 10px;
+  margin: 5%;
+}
+.work-heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-style: double;
+  border-width: 10px;
+  border-color: #007ced;
+  border-spacing: 10%;
+  padding: 5%;
+}
+
+.work-font {
+  font-size: 180%;
 }
 
 /*Project Section Styling*/
@@ -315,10 +344,14 @@ p {
     width: 150%;
   }
   #contact-form {
-    width: 100%;
+    width: %;
   }
   .contact-input {
-    width: 250%;
+    width: %;
+  }
+
+  .button {
+    width: 50%;
   }
 }
 
@@ -402,4 +435,19 @@ p {
 q {
   padding: 1%;
   text-align: center;
+}
+
+footer {
+  background-color: #ffffff;
+  height: fit-content;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  font-size: 60%;
+}
+
+.fas {
+  margin: 1%;
 }
