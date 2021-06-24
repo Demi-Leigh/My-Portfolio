@@ -5,18 +5,30 @@
 }
 body {
   background-color: rgb(0 124 237);
+  margin: 5%;
 }
 
 .Pages {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  flex-direction: row;
   background-color: white;
-  border-style: double;
-  border-color: #007ced;
-  border-width: 10px;
-  border-radius: 10px;
-  padding: 1%;
-  margin: 5%;
+  padding: 3% 3% 3%;
+}
+
+.landing-content img {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 200%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  margin-right: 4%;
 }
 
 .navbar-link {
@@ -24,72 +36,85 @@ body {
   justify-content: space-between;
   margin: 1%;
   font-size: 150%;
-  font-family: serif;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
-.landing {
+.navbar-link a {
+  text-decoration: none;
+  color: #727272;
+}
+
+.landing-content {
   display: flex;
   justify-content: center;
   font-family: serif;
   background-color: #ffffff;
-  border-style: double;
-  border-color: #007ced;
-  border-width: 10px;
-  border-radius: 10px;
-  margin: 5%;
-  padding: 5%;
+}
+
+.landing-description {
+  margin-top: 4%;
 }
 
 .dev-heading {
-  color: #007ced;
+  color: black;
 }
 
 h1 {
-  font-size: 350%;
-  font-family: serif;
-  color: black;
-  font-weight: 350;
+  font-size: 150%;
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: grey;
+  margin-left: 3%;
 }
 
 h2 {
   font-size: 250%;
   color: black;
-  font-family: serif;
+  font-family: "Poppins", Helvetica, sans-serif;
+  margin-left: 3%;
 }
 
 h3 {
   color: #727272;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
 h4 {
   color: #727272;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
 img {
+  object-fit: inherit;
   height: 50vh;
   width: 50vh;
 }
 
 p {
   padding: 3%;
-  font-size: 250%;
-  font-family: serif;
+  font-size: 170%;
+  font-family: "Poppins", Helvetica, sans-serif;
   color: #727272;
+}
+
+.footer {
+  background-color: #ffffff;
+  border-top: 2px solid #727272;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.fa-github {
+  font-size: 30px;
 }
 
 /*About Section Styling*/
 
 .about-container {
-  background-color: #ffffff;
-  border-style: double;
-  border-color: #007ced;
-  border-width: 10px;
-  border-radius: 10px;
-  margin: 5%;
+  width: 100%;
   padding: 5%;
 }
 
-.bio {
+.bio-heading {
   color: black;
   font-size: 140%;
   font-family: serif;
@@ -97,22 +122,51 @@ p {
 
 .about-text {
   font-size: 125%;
-  font-family: serif;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
-.bio-border {
-  border-style: double;
-  border-width: 5px;
-  border-color: #007ced;
-  margin: 2%;
+.bio {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
   padding: 1%;
+}
+
+.bio .bio-content {
+  width: 45%;
+}
+
+.bio-content2 {
+  width: 320px;
+}
+
+.footer-about {
+  background-color: #ffffff;
+  border-top: 2px solid #727272;
+  padding: 1%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.picture img {
+  margin: 0% 10% 10% 0%;
+  object-fit: inherit;
+  border-radius: 250px;
 }
 
 /*Education Section Styling*/
 
+.Pages-edu {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
 .edu-heading {
   padding: 1%;
   font-weight: 300;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
 .line {
@@ -144,9 +198,7 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   font-size: 130%;
-  border-style: double;
-  border-width: 10px;
-  border-color: #007ced;
+  border-radius: 10px;
 }
 
 .card1 {
@@ -181,19 +233,6 @@ p {
   grid-column-start: 1;
 }
 
-.skills-container {
-  padding: 5%;
-  margin: 5%;
-  background: #ffffff;
-  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  font-size: 130%;
-  border-style: double;
-  border-width: 10px;
-  border-color: #007ced;
-}
-
 .skills-heading {
   display: flex;
   justify-content: center;
@@ -201,10 +240,8 @@ p {
   font-size: 300%;
   background-color: #ffffff;
   border-radius: 10px;
-  border-style: double;
-  border-color: #007ced;
   border-width: 10px;
-  font-family: serif;
+  font-family: "Poppins", Helvetica, sans-serif;
   padding: 1%;
   font-weight: 300;
 }
@@ -212,7 +249,7 @@ p {
 #logos {
   display: flex;
   justify-content: center;
-  font-size: 20vh;
+  font-size: 12vh;
 }
 
 .fab {
@@ -221,33 +258,51 @@ p {
 
 .work-exp {
   background-color: #ffffff;
-
-  border-color: #007ced;
-  border-width: 10px;
   margin: 5%;
+  overflow: hidden;
 }
 .work-heading {
   display: flex;
+  color: black;
   justify-content: center;
   font-weight: 700;
+  font-size: 5vh;
+  margin-right: 4%;
 }
 
 .work {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-style: double;
-  border-width: 10px;
-  border-color: #007ced;
-  border-spacing: 10%;
+  border-radius: 10px;
   padding: 5%;
+  margin: 3%;
+  background-color: #ffffff;
 }
 
 .work-font {
   font-size: 180%;
 }
 
+.footer-edu {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
 /*Project Section Styling*/
+
+.Pages-projects {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  padding: 5%;
+}
 
 .container {
   display: flex;
@@ -268,8 +323,6 @@ p {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 10px;
-  border-style: double;
-  border-color: #007ced;
   border-width: 10px;
   overflow: hidden;
   padding: 1%;
@@ -327,14 +380,31 @@ p {
 
 /*Contact Form Styling*/
 
+.Pages-contact {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.footer-contact {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 #form-container {
   display: flex;
   justify-content: center;
+  margin-top: 5%;
 }
 
 #contact-form {
   border-style: double;
   border-width: 10px;
+  border-radius: 10px;
   border-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -375,6 +445,14 @@ p {
 
 /*Testimonial Styling*/
 
+.Pages-test {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
 .test-content {
   display: flex;
   justify-content: center;
@@ -383,13 +461,14 @@ p {
   align-items: center;
   padding: 4%;
   font-size: 150%;
-  background: rgba(255, 255, 255, 0.25);
+  background-color: #ffffff;
   box-shadow: 10px 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
+  margin-top: 10%;
 }
 
 .owl-carousel .owl-item img {
@@ -405,6 +484,7 @@ p {
 q {
   padding: 1%;
   text-align: center;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
 footer {
