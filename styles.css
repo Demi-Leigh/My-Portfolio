@@ -84,9 +84,12 @@ h4 {
 }
 
 img {
-  object-fit: inherit;
+  object-fit: cover;
+  object-position: center;
   height: 50vh;
   width: 50vh;
+  border: double whitesmoke 15px;
+  box-shadow: inset 20px 20px 60px whitesmoke, inset -20px -20px 60px #ffffff;
 }
 
 p {
@@ -302,7 +305,7 @@ p {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
-  padding: 5%;
+  padding: 3%;
 }
 
 .container {
@@ -376,7 +379,7 @@ p {
 }
 .description {
   margin-bottom: 10px;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 /*Contact Form Styling*/
@@ -470,6 +473,7 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
   margin-top: 10%;
+  min-height: 600px;
 }
 
 .owl-carousel .owl-item img {
