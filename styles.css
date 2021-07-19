@@ -65,14 +65,14 @@ h1 {
   font-size: 150%;
   font-family: "Poppins", Helvetica, sans-serif;
   color: grey;
-  margin-left: 3%;
+  /* margin-left: 3%; */
 }
 
 h2 {
   font-size: 250%;
   color: black;
   font-family: "Poppins", Helvetica, sans-serif;
-  margin-left: 3%;
+  /* margin-left: 3%; */
 }
 
 h3 {
@@ -93,7 +93,6 @@ img {
 }
 
 p {
-  padding: 3%;
   font-size: 170%;
   font-family: "Poppins", Helvetica, sans-serif;
   color: #727272;
@@ -101,30 +100,41 @@ p {
 
 .footer {
   background-color: #ffffff;
-  border-top: 2px solid #727272;
+  border-top: 2px solid #eee;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
+.footer a {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
 .fa-github {
-  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-decoration: none;
+  color: #007ced;
+}
+
+.fa-github p {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 /*About Section Styling*/
 
-.about-container {
-  width: 100%;
-  padding: 5%;
-}
-
 .bio-heading {
   color: black;
-  font-size: 140%;
-  font-family: serif;
+  font-size: 25px;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
 .about-text {
-  font-size: 125%;
+  font-size: 20px;
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
@@ -132,7 +142,7 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 1%;
+  padding: 10px;
 }
 
 .bio .bio-content {
@@ -146,7 +156,7 @@ p {
 .footer-about {
   background-color: #ffffff;
   border-top: 2px solid #727272;
-  padding: 1%;
+  padding: 1px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -267,11 +277,11 @@ p {
 }
 .work-heading {
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
   font-weight: 700;
   font-size: 5vh;
-  margin-right: 4%;
+  margin: 5% 0% 5% 0%;
 }
 
 .work {
@@ -286,6 +296,9 @@ p {
 
 .work-font {
   font-size: 180%;
+}
+
+.work-head {
 }
 
 .footer-edu {
@@ -333,7 +346,7 @@ p {
 }
 
 .card-img {
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   width: 100%;
   border-radius: 5px;
@@ -384,11 +397,25 @@ p {
 
 /*Contact Form Styling*/
 
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0% 50px;
+  display: none;
+}
+
+.header button {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+}
+
 .Pages-contact {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -443,7 +470,7 @@ p {
   justify-content: center;
   text-transform: uppercase;
 }
-.button {
+.button {S
   margin-top: 10%;
 }
 
@@ -477,15 +504,11 @@ p {
 }
 
 .owl-carousel .owl-item img {
-  width: 40vw;
-  height: 20vh;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.test-img {
-  width: 10px;
-  height: 50px;
-  object-fit: contain;
-}
 q {
   padding: 1%;
   text-align: center;
@@ -538,5 +561,21 @@ footer {
 
   .contact-heading {
     font-size: 200%;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .Pages-contact {
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: -120%;
+    width: 90%;
+  }
+
+  .Pages-contact.open {
+    right: 20px;
   }
 }
