@@ -29,6 +29,8 @@ ul {
   margin-left: 4%;
   margin-bottom: 4%;
   margin-right: 4%;
+  border: double whitesmoke 15px;
+  box-shadow: inset 20px 20px 60px whitesmoke, inset -20px -20px 60px #ffffff;
 }
 
 .navbar-link {
@@ -88,8 +90,6 @@ img {
   object-position: center;
   height: 50vh;
   width: 50vh;
-  border: double whitesmoke 15px;
-  box-shadow: inset 20px 20px 60px whitesmoke, inset -20px -20px 60px #ffffff;
 }
 
 p {
