@@ -547,9 +547,6 @@ footer {
   .landing {
     flex-direction: column;
   }
-  .Pages {
-    flex-direction: column;
-  }
   .timeline-container {
     display: flow-root;
   }
@@ -558,7 +555,7 @@ footer {
     flex-direction: column;
   }
   .buttons {
-    width: 150%;
+    width: 100%;
   }
   #contact-form {
     width: -webkit-fill-available;
@@ -567,27 +564,41 @@ footer {
     width: 100%;
   }
 
-  .button {
-    width: 50%;
-  }
-
   .contact-heading {
     font-size: 200%;
   }
-
-  .header {
+}
+@media screen and (max-width: 900px) {
+  .bio {
+    flex-direction: column;
+  }
+  .bio div.bio-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
-  .Pages-contact {
-    display: block;
-    position: absolute;
-    top: 100px;
-    right: -120%;
-    width: 90%;
+  .bio-content2 {
+    width: 100%;
   }
-
-  .Pages-contact.open {
-    right: 20px;
+  .bio-heading {
+    align-self: flex-start;
+  }
+  .landing-content {
+    min-height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landing-content img {
+    margin-top: 20px;
+  }
+  .Pages ul,
+  ul {
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: auto;
   }
 }
