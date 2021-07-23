@@ -60,13 +60,13 @@ ul {
   color: black;
 }
 
-h1 {
+.landing-h1 {
   font-size: 150%;
   font-family: "Poppins", Helvetica, sans-serif;
   color: grey;
 }
 
-h2 {
+.dev-heading {
   font-size: 180%;
   color: black;
   font-family: "Poppins", Helvetica, sans-serif;
@@ -91,7 +91,7 @@ img {
   width: 50vh;
 }
 
-p {
+.landing-text {
   font-size: 170%;
   font-family: "Poppins", Helvetica, sans-serif;
   color: #727272;
@@ -542,32 +542,6 @@ footer {
   margin: 1%;
 }
 
-/*Mobile Responsive*/
-@media screen and (max-width: 600px) {
-  .landing {
-    flex-direction: column;
-  }
-  .timeline-container {
-    display: flow-root;
-  }
-  .icons {
-    display: flex;
-    flex-direction: column;
-  }
-  .buttons {
-    width: 100%;
-  }
-  #contact-form {
-    width: -webkit-fill-available;
-  }
-  .contact-input {
-    width: 100%;
-  }
-
-  .contact-heading {
-    font-size: 200%;
-  }
-}
 @media screen and (max-width: 900px) {
   .bio {
     flex-direction: column;
@@ -600,5 +574,54 @@ footer {
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: auto;
+  }
+
+  .landing-text {
+    font-size: 150%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+  }
+
+  .landing-h1 {
+    margin-left: 5%;
+  }
+
+  .dev-heading {
+    margin-left: 5%;
+  }
+
+  .footer-name {
+    font-family: "Poppins", Helvetica, sans-serif;
+  }
+
+  .navbar-link a {
+    font-size: 17px;
+  }
+
+  #logos {
+    font-size: 50px;
+  }
+
+  .work {
+    padding: 8%;
+  }
+
+  q {
+    font-size: 15px;
+  }
+
+  .test-heading {
+    font-size: 25px;
+  }
+  .owl-carousel h3 {
+    font-size: 25px;
+  }
+
+  #contact-form {
+    width: 80%;
+  }
+
+  .contact-input {
+    padding: 10px;
   }
 }
