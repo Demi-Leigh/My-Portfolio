@@ -56,10 +56,6 @@ ul {
   margin-top: 4%;
 }
 
-.dev-heading {
-  color: black;
-}
-
 .landing-h1 {
   font-size: 150%;
   font-family: "Poppins", Helvetica, sans-serif;
@@ -521,6 +517,9 @@ div.picture {
   object-fit: cover;
 }
 
+.test-heading {
+  font-family: "Poppins", Helvetica, sans-serif;
+}
 q {
   padding: 1%;
   text-align: center;
